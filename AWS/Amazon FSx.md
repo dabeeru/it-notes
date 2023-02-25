@@ -1,0 +1,14 @@
+- Windows File Server
+    - **Storage for Windows OS**
+    - Built on Windows Server
+    - **Communication is over SMB**
+    - **Support Active Directory users, ACLs, Groups, Security Policies**
+    - **Support Distributed File System namespaces and replication**
+- **FSx for Lustre**
+    - **Supports Lustre filesystem \(hundreds gigabytes per second of throughput, millions IOPS, sub\-millisecond latencies\)**
+    - Use cases:
+        - Compute\-intensive workloads
+        - High\-performance computing
+        - Machine learning
+        - Media data processing
+        - Electronic design automation

@@ -1,0 +1,7 @@
+- **Single point entry point for internet traffic**
+- You can **handle traffic from/to VPN endpoints, VPC, direct Connect** etc.
+- Works on [[Hub-And-Spoke model]]
+- **Regional resource**, but **can be configured across multiple regions**
+- Can be configured across multiple AWS accounts with RAM \(Resource Access Manager\)
+- Route tables can limit how VPCs talk to one another
+- Support IP multicast

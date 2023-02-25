@@ -1,0 +1,5 @@
+- DEV - for developers
+- QA - for further testing
+- UAT - User acceptance tests
+- STAGING - exact replicat of PROD environment use to final testing of release candidate, and reproducing bugs
+- PROD - PROD

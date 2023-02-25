@@ -1,0 +1,3 @@
+- Let you define [[AWS WAF]] rules for [[AWS ALB]], [[AWS API Gateway]] and [[AWS CloudFront]] distributions over whole AWS organization
+- Let you define **AWS Shield Advanced** protections for **ALB, ELB Classic, EIP, CloudFront**
+- Enable security groups for **EC2** and **ENIs**

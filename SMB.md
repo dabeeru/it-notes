@@ -1,0 +1,4 @@
+- Originally made for Windows but supported also on Linux 
+- Can be used also to share printers 
+- Can work as domain controller in heterogenous environments
+- Linux workstations 

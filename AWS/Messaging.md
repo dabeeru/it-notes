@@ -1,0 +1,6 @@
+## [[Event processing patters]]
+## [[Fanout pattern]]
+## [[SQS]]
+## [[AmazonMQ ]]
+## [[Simple WorkFlow Service]]
+## [[SNS  Simple notification service]]

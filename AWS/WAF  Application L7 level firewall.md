@@ -1,0 +1,16 @@
+
+- You can allow connection or respond with 403
+- There are 3 behaviors
+    - **Allow** all expect specified
+    - **Block** all except specified
+    - **Count** request that match properties you specify
+- Rules can be based on
+    - **Sender IP address**
+    - **IP Geo location**
+    - **Request headers**
+    - **Regexp**
+    - **Length of request**
+    - **SQL injection code presence**
+    - **XSS code presence**
+    - **Query string parameters**
+- WAF is commonly used to blacklist malicious IPs

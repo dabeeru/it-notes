@@ -1,0 +1,3 @@
+Cookies are files which can be saved in browser storage by various web applications, they are meant to store any user specific configuration for the website (eg. UI settings, basket content, session information etc.)
+
+Cookies can be also used for tracking, common use case is when website saves some ad related cookies so then after browsing other websites this cookies can be used to show some ads related to this website.
