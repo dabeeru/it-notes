@@ -8,6 +8,7 @@ tags:
 
 ---
 # Security
+
 # Tools
 - [offsec.tools](https://offsec.tools)
 # Resources
@@ -363,84 +364,7 @@ Any type of attack which includes replying previous network communication in dif
 - **Adware \-** malicious software, enforcing some ads
 - **Ransomware \-** malware encrypting software for money
 
-# CSPM
-
-- Cloudguard has [terraform provider](https://registry.terraform.io/providers/dome9/dome9/latest/docs)
-
-## Landing zone rules
-
-## Workload rules
-
-- Encryption in transit
-    - Strong cyphers
-    - Allowing only encrypted communication \(eg. enforcing SSL for webservers and s3 buckets etc.\) 
-- Enforce proper resource tagging
-    - Data Privacy
-        - Confidential
-        - Internal
-        - Public
-- Proper encryption at rest
-    - Enforcing encryption 
-    - Use of strong keys controlled by organisation \(no provider managed keys\) 
-    - Enforce keys rotation
-    - What to encrypt
-        - Databases 
-        - S3 buckets
-        - Hard drives and other filesystems
-        - Queues and datastreams
-        - Backup
-        - Snapshot
-        - Images
-        - Logs
-        - Audit logs
-        - Secrets
-- Restrictive firewall configuration configuration
-    - Ensure that all traffic is restricted by default \(eg. default security group restricts everything by default\)
-    - Ensure that traffic is not opened for ports which indicate unencrypted communication
-- Enforce zero trust access control rules
-    - IAM
-        - Policies should be attached to group or roles, not specific users
-    - Other policies \(eg. S3 bucket policies\)
-- Disable public access \(eg. s3 buckets not publicly available\) 
-- K8S
-    - Limit connection to the API server to specific VPN network
-- WAF
-    - Ensure WAF associations
-    - And proper WAF rules
-- Ensure DDoS protection 
-- Ensure Certificates are valid
-    - Alarm before expiration
-- Ensure Backups
-- Ensure proper telemetry enabled
-    - eg. VPC flow logs or EKS control plane logs 
-- Remove leftovers resources
-    - Eg unused security groups or IAM roles
-- Ensure that software is updated 
-- Ensure secrets rotation 
-- Ensure user credentials rotation
-    - Eg. client\_id and secret\_id for programatic access
-- Auditing
-    - Ensure that audit is enabled 
-    - Ensure encryption
-    - Ensure CloudTrail logs integrity
-- Authorization
-    - Ensure proper configuration of ID Federation \(eg. OIDC, SAML\) 
-    - Disable password configuration
-    - Ensure 2FA \(on CLoud level might be applied only to root account since rest is going through OIDC\) 
-    - Disable programatic access for root account
-    - Remove unused credentials
-- Ensure alerting is enabled
-    - There might be some alarms triggered when someone is changing something which shouldn't be changed or unauthorized Cloud API calls attempts
-- Ensure that other compliance services and scanners are enabled
-    - Eg. AWS Inspector, AWS Macie, AWS Guard Duty
-
-Certificate \- [CCSK](https://cloudsecurityalliance.org/education/ccsk/)
-
-List some cloud guard rules
-
-[https://www.checkpoint.com/cyber\-hub/cloud\-security/what\-is\-cspm\-cloud\-security\-posture\-management/](https://www.checkpoint.com/cyber-hub/cloud-security/what-is-cspm-cloud-security-posture-management/)
-
-[https://www.rapid7.com/info/what\-is\-cloud\-security\-posture\-management\-cspm/](https://www.rapid7.com/info/what-is-cloud-security-posture-management-cspm/)
+# [[CSPM]]
 
 # AWS Security
 
