@@ -6,7 +6,7 @@ tags:
 	- Cloud
 	- AWS
 	- IdentityManagment
-	- Catalyx
+	- Katalx
 ---
 
 - **Managed directory for SaaS**
