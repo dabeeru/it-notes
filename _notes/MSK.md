@@ -26,7 +26,7 @@ tags:
 - Ensure that clients are aware of nodes in every AZ 
 
 ## Performance
-- CPU load should be belo 60%
+- CPU load should be below 60%
 
 ### Fail tolerance
 - Fail tolerance - MSK automatically recovers from failure and reuses IP and storage from the older node  
