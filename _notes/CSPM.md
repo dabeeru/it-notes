@@ -1,6 +1,6 @@
 - Cloud Security Posture Management
 - Cloudguard has [terraform provider](https://registry.terraform.io/providers/dome9/dome9/latest/docs)
-- [[AWS Security Hub]] might be some alternative natively on AWS
+- [[AWS Security HUB]] might be some alternative natively on AWS
 
 ## Rules
 

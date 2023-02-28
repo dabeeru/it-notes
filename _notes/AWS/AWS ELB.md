@@ -16,7 +16,7 @@
 ## Classic load balancer
 - Support both layer 7 and layer 4 load balancing
 - Supports **X\-Forwarded**  original IP of the client can be saved in this header on load balancer
-- Supports [[sticky session]]s request will be send to specific target during the sessions
+- Supports [[Sticky session]]s request will be send to specific target during the sessions
 - If application is not responding LB will respond with **504** http error
 - Cross zone load balancing traffic will be load balanced across zones evenly
 - Connection draining period time when traffic can still flow before removing vm from load balancing targets
