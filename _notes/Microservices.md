@@ -4,10 +4,10 @@ tags:
   - Architecture
 	- Microservices
 ---
-Still read those chapters
-- Chapter 5 Splitting the Monolith
-- Chapter 10 Conways Law and System Design
-- Chapter 12 Bringing It All Together
+> SKIPPED CHAPTERS: 
+> Chapter 5 Splitting the Monolith
+> Chapter 10 Conways Law and System Design
+> Chapter 12 Bringing It All Together
 
 # Benefits
 ## Technology heterogenity
@@ -40,8 +40,43 @@ Still read those chapters
 - Distributed systems by definition are characterized with high level of segragation
 - If implemented according to [[Least Privilage Principle]], in case of one microservice would be compromise it doesn't automatically compromise the whole system
 
+# Caching
+## Client side caching
+- Client caches response and decides when to hit the source
+- Minimizes network calls 
+- Invalidating cache is much harder
+
+## Proxy caching
+- Caching is transparent for client and server
+- A bit more tricky invalidation (cache is centralized)
+- It's possible that there are some proxy caches on ISP level
+- Tools:
+	- Squid
+	- Varnish
+
+## Server side caching
+- Easy invalidation
+- Tools 
+	- Redis 
+	- Memcached
+	- Simple in memory cache
+
+## HTTP caching
+> **PAGES**: 225 -230
+
+### Cache control 
+- you can use `cache-control` header to instruct clients if and for how long should they cache responses
+- `Expires` hearder can instruct how long resource can be cached for (do not use `Expires: Never` - it will result in keeping cached resource until manual invalidation of client's cache)
+- Conditional GET - utilizes `ETag` attached to the resource which allows client to use `ETag` value in `If-Not-Match` header, where server would respond with `304 Not Modified` if the resource hasn't changed
+
+## CDN
+- Content delivery networks are special type of proxy caching where, cache is distributed into a lot of edge locations close to the customers
+
+## Hiding origin 
+- If we really want to prevent origin from big amount of request (in case if cache is empty or we will lose the shard) we can fail requests on cache level and request origin to repopulate cache aynchronously
+
 # Architecture
-### Conaiderations
+### Considerations
 - Every check in is release candidate
 - Microservice boundaries should match service boundaries
 - Rule of a thumb: Microservice is a piece of software that can be rewriten in 2 weeks
@@ -73,6 +108,8 @@ Still read those chapters
 
 ## Versioning 
 - Best way to handle breaking changes is not to make them in the first place
+
+> **MISSING**: Integration chapter from versioning to an end.
 
 ## Integration
 - API should be technology-agnostic
