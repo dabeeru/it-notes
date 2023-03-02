@@ -103,8 +103,7 @@ And two more outside of main spec:
 6. Broweser app is calling web server with `authorization_code`
 7. Client \(web server\) is using authorization code, `client_id`  and `client_secret`  to issue access token
 8. Eventually client \(web server\) can refresh the access token by using refresh token
-
-![image.png](image/image.png)
+![[image.png]]
 
 ### Security
 
@@ -124,8 +123,7 @@ And two more outside of main spec:
 4. OAuth authorization server asks resource owner for granting permissions to the specified scopes for 3rd party app
 5. OAuth authorization server is redirecting user to the callback url and add `access_token`
 6. Client app can use `access_token` to use an API
-
-![image-1.png](image/image-1.png)
+![[image 1.png]]
 
 ### Security
 
@@ -138,8 +136,7 @@ And two more outside of main spec:
 1. Resource owner passes credentials to client application
 2. Client app send request to OAuth server
 3. OAuth server responds with `access_token` and optional `refresh_token`
-
-![image-2.png](image/image-2.png)
+![[image 2.png]]
 
 ### Security
 
@@ -150,8 +147,7 @@ And two more outside of main spec:
 ## Client credentials flow
 
 This flow can be used if the client owns its data and doesn't need access delegation form resource\_owner. 
-![image-3.png](image/image-3.png)
-
+![[image 3.png]]
 1. Client sends `client_id` and `client_secret`
 2. OAuth server is responding with `access_token`
 
