@@ -5,6 +5,8 @@ tags:
 	- IT 
 	- StructureNote
 ---
+# Theory
+- Semantic - the meaning
 # Languages
 - [[Python]]
 - [[JavaScript]] 

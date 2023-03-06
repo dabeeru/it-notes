@@ -16,6 +16,7 @@ tags:
 
 # Tooling
 - [[Terraform]]
+- [[Immutable infrastrcuture]]
 
 ## [[Landing zone]]
 ## [[Northsouth eastright model]]
